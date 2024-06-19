@@ -62,7 +62,7 @@ header{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 80%; 
+    width: 90%; 
 }
 .ben > h2 {
   font-weight: bold;
@@ -209,7 +209,7 @@ footer > p {
     max-width: 100%;
 
   }
-  .trial {
+  .trial .ben{
     width: 80%;
   }
   .form {
