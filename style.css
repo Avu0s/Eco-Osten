@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --dgreen: hsl(150, 76%, 21%);
+  --green: hsl(154, 59%, 51%);
+  --ylw: hsl(54, 100%, 54%);
+  --dBlue: hsl(249, 10%, 26%);
+  --grayBlue: hsl(246, 25%, 77%);
+  --boxShadow: 0 0.5rem rgba(34, 34, 34, 0.2);
+  --dBoxShadow: 0 0.25rem hsl(154, 55%, 44%);
+}
+body {
+  height: 100%;
+  width: 100%;
+  background-color: var(--dgreen);
+}
+header{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  padding: 1.5rem 0; 
+  color: #fff;
+  gap: 1rem;
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.container, .container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  margin: 0 auto;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+.container{
+  padding-bottom: 3rem; 
+}
+.text {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+.text > h1 {
+  margin-top: 2rem;
+}
+
+.ben{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 80%; 
+}
+.ben > h2 {
+  font-weight: bold;
+}
+.ben > ul > li{
+  line-height:1.5rem;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+li{
+    list-style: none;
+}
+.img{
+max-width: 80%;
+border-radius: .75rem;
+}
+.info {
+    text-align: center;
+  line-height: 1.5rem;
+}
+.trial {
+  width: 90%; 
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: var(--ylw);
+  color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: var(--boxShadow);
+}
+.trial > p {
+  margin: auto;
+  font-size: 16px;
+}
+.try{
+  font-weight: 600;
+  color: #111;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 1.5rem 0.5rem;
+  border-radius: 0.5rem;
+  margin: auto;
+  gap: 1rem;
+  box-shadow: var(--boxShadow);
+}
+.con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 98%;
+}
+input {
+  outline-color:var(--dBlue);
+  padding-left: 1rem;
+  margin: auto;
+  min-width: 90%;
+  height: 3rem;
+  border-radius: 0.25rem;
+  border: solid 0.1rem var(--grayBlue);
+  font-weight: 600;
+}
+button {
+  border: none;
+  background-color: var(--green);
+  height: 3rem;
+  width: 95%;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  box-shadow: var(--dBoxShadow);
+}
+button:active{
+  background: hsl(154, 70%, 55%);
+}
+.terms {
+  font-size: 0.7rem;
+  max-width: 75%;
+  margin: 0 auto;
+  color: var(--grayBlue);
+}
+.tnc {
+  color: var(--red);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #fff;
+}
+
+footer > img {
+    max-width: 14rem;
+}
+footer > p {
+    text-align: center;
+}
+@media (min-width: 560px) {
+  body {
+    height: 100vh;
+    background-size: cover;
+  }
+  header{
+    padding-top: 2rem; 
+  }
+  .container {
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .text {
+    margin-left: 0.75rem;
+    text-align: start;
+  }
+  .text > p {
+    line-height: 1.75rem;
+  }
+  .text > h1 {
+    line-height: 3rem;
+    font-size: 2.75rem;
+  }
+  .trial > p {
+    max-width: 100%;
+
+  }
+  .trial {
+    width: 80%;
+  }
+  .form {
+    width: 80%;
+    margin: 0;
+    justify-content: none;
+  }
+  form {
+    width: inherit;
+    padding: 2rem 1rem;
+    width: 80%;
+  }
+  .terms {
+    font-size: 0.6rem;
+  }
+  footer{
+    flex-direction: row;
+    justify-content: space-between;
+}
+}
