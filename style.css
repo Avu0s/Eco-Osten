@@ -144,10 +144,10 @@ input {
   outline-color: #111;
   padding-left: 1rem;
   margin: auto;
-  width: 80%;
+  width: 95%;
   height: 3rem;
   border-radius: 0.25rem;
-  border: solid 0.1rem var(--grayBlue);
+  border: solid 0.1rem #111;
   font-weight: 600;
 }
 button {
