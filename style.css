@@ -141,10 +141,10 @@ form {
   width: 90%;
 }
 input {
-  outline-color:var(--dBlue);
+  outline-color: #111;
   padding-left: 1rem;
   margin: auto;
-  min-width: 80%;
+  width: 80%;
   height: 3rem;
   border-radius: 0.25rem;
   border: solid 0.1rem var(--grayBlue);
